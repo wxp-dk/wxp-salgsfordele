@@ -8,6 +8,11 @@
  * Primary Branch: main
  */
 
+ // Load bundled Git Updater
+if ( file_exists( plugin_dir_path( __FILE__ ) . 'vendor/git-updater/git-updater.php' ) ) {
+    require_once plugin_dir_path( __FILE__ ) . 'vendor/git-updater/git-updater.php';
+}
+
 /**
  * WXP Salgsfordele with Admin Settings under WooCommerce
  * Version 2.0.3 features:
