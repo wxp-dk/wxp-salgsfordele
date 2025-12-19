@@ -12,7 +12,12 @@
 if ( file_exists( plugin_dir_path( __FILE__ ) . 'vendor/git-updater/git-updater.php' ) ) {
     require_once plugin_dir_path( __FILE__ ) . 'vendor/git-updater/git-updater.php';
 }
-
+// Suppress Git Updater promotional messages
+add_filter( 'github_updater_hide_settings', '__return_true' );
+add_filter( 'gu_disable_wpcron', '__return_true' );
+add_action( 'admin_init', function() {
+    remove_action( 'admin_notices', array( 'Fragen\GitHub_Updater\Messages', 'promote' ) );
+}, 20 );
 
 
 /**
