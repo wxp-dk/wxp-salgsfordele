@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WXP Salgsfordele
  * Description: Konfigurerbar banner med salgsfordele - separate indstillinger for desktop og mobil
- * Version: 2.0.4
+ * Version: 2.0.5
  * Author: Prokop Suchanek // wxp.dk
  * GitHub Plugin URI: wxp-dk/wxp-salgsfordele
  * Primary Branch: main
